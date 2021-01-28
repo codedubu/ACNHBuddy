@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		795C10CF25C2196800030E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C10CE25C2196800030E02 /* AppDelegate.swift */; };
 		795C10D125C2196800030E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C10D025C2196800030E02 /* SceneDelegate.swift */; };
-		795C10D325C2196800030E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C10D225C2196800030E02 /* ViewController.swift */; };
 		795C10D625C2196800030E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795C10D425C2196800030E02 /* Main.storyboard */; };
-		795C10D925C2196800030E02 /* ACNHFishies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 795C10D725C2196800030E02 /* ACNHFishies.xcdatamodeld */; };
 		795C10DB25C2196B00030E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795C10DA25C2196B00030E02 /* Assets.xcassets */; };
 		795C10DE25C2196B00030E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795C10DC25C2196B00030E02 /* LaunchScreen.storyboard */; };
+		795C10EF25C21B3A00030E02 /* FishError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C10EE25C21B3A00030E02 /* FishError.swift */; };
+		795C10F325C21E5C00030E02 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C10F225C21E5C00030E02 /* Fish.swift */; };
+		795C10F725C2254900030E02 /* FishController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C10F625C2254900030E02 /* FishController.swift */; };
+		795C110325C22AFD00030E02 /* FishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C110225C22AFD00030E02 /* FishViewController.swift */; };
+		79980CBA25C2774900C9ACAB /* HideKeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79980CB925C2774900C9ACAB /* HideKeyBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		795C10CB25C2196800030E02 /* ACNHFishies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACNHFishies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		795C10CE25C2196800030E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		795C10D025C2196800030E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		795C10D225C2196800030E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		795C10D525C2196800030E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		795C10D825C2196800030E02 /* ACNHFishies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ACNHFishies.xcdatamodel; sourceTree = "<group>"; };
 		795C10DA25C2196B00030E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		795C10DD25C2196B00030E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		795C10DF25C2196B00030E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		795C10EE25C21B3A00030E02 /* FishError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishError.swift; sourceTree = "<group>"; };
+		795C10F225C21E5C00030E02 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		795C10F625C2254900030E02 /* FishController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishController.swift; sourceTree = "<group>"; };
+		795C110225C22AFD00030E02 /* FishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishViewController.swift; sourceTree = "<group>"; };
+		79980CB925C2774900C9ACAB /* HideKeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,75 @@
 		795C10CD25C2196800030E02 /* ACNHFishies */ = {
 			isa = PBXGroup;
 			children = (
+				795C10F525C2253E00030E02 /* Controllers */,
+				795C10F125C21E4600030E02 /* Model */,
+				795C10ED25C21AE400030E02 /* Helpers */,
+				795C10E925C219BE00030E02 /* Views */,
+				795C10E725C219AA00030E02 /* Resources */,
+			);
+			path = ACNHFishies;
+			sourceTree = "<group>";
+		};
+		795C10E725C219AA00030E02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				795C10CE25C2196800030E02 /* AppDelegate.swift */,
 				795C10D025C2196800030E02 /* SceneDelegate.swift */,
-				795C10D225C2196800030E02 /* ViewController.swift */,
-				795C10D425C2196800030E02 /* Main.storyboard */,
 				795C10DA25C2196B00030E02 /* Assets.xcassets */,
 				795C10DC25C2196B00030E02 /* LaunchScreen.storyboard */,
 				795C10DF25C2196B00030E02 /* Info.plist */,
-				795C10D725C2196800030E02 /* ACNHFishies.xcdatamodeld */,
 			);
-			path = ACNHFishies;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		795C10E925C219BE00030E02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				795C10D425C2196800030E02 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		795C10ED25C21AE400030E02 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				795C10EE25C21B3A00030E02 /* FishError.swift */,
+				79980CB925C2774900C9ACAB /* HideKeyBoard.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		795C10F125C21E4600030E02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				795C10F225C21E5C00030E02 /* Fish.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		795C10F525C2253E00030E02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				795C10FD25C22A7100030E02 /* View Controller */,
+				795C10FA25C22A5400030E02 /* Model Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		795C10FA25C22A5400030E02 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				795C10F625C2254900030E02 /* FishController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		795C10FD25C22A7100030E02 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				795C110225C22AFD00030E02 /* FishViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795C10D325C2196800030E02 /* ViewController.swift in Sources */,
-				795C10D925C2196800030E02 /* ACNHFishies.xcdatamodeld in Sources */,
+				795C110325C22AFD00030E02 /* FishViewController.swift in Sources */,
+				795C10EF25C21B3A00030E02 /* FishError.swift in Sources */,
 				795C10CF25C2196800030E02 /* AppDelegate.swift in Sources */,
+				795C10F725C2254900030E02 /* FishController.swift in Sources */,
+				79980CBA25C2774900C9ACAB /* HideKeyBoard.swift in Sources */,
 				795C10D125C2196800030E02 /* SceneDelegate.swift in Sources */,
+				795C10F325C21E5C00030E02 /* Fish.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VVA7JF63G;
-				INFOPLIST_FILE = ACNHFishies/Info.plist;
+				INFOPLIST_FILE = ACNHFishies/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VVA7JF63G;
-				INFOPLIST_FILE = ACNHFishies/Info.plist;
+				INFOPLIST_FILE = ACNHFishies/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,19 +413,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		795C10D725C2196800030E02 /* ACNHFishies.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				795C10D825C2196800030E02 /* ACNHFishies.xcdatamodel */,
-			);
-			currentVersion = 795C10D825C2196800030E02 /* ACNHFishies.xcdatamodel */;
-			path = ACNHFishies.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 795C10C325C2196800030E02 /* Project object */;
 }

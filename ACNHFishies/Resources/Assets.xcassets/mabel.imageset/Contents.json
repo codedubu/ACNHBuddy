@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "249-2495015_amiibo-festival-comes-out-on-november-20th-in.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
