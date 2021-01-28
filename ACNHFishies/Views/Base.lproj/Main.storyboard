@@ -56,6 +56,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V3j-lv-Yzd">
                                 <rect key="frame" x="20.5" y="390" width="373" height="108"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acdirt1" translatesAutoresizingMaskIntoConstraints="NO" id="gnv-P7-nUq">
+                                <rect key="frame" x="20" y="516" width="374" height="208"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puX-rH-RCV">
                                 <rect key="frame" x="41.5" y="406" width="331" height="71.5"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
@@ -65,16 +68,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zcC-O6-F0q" userLabel="locationRarityStackView">
                                 <rect key="frame" x="20.5" y="515.5" width="373" height="67.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N6-uY-U7C">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Location:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N6-uY-U7C">
                                         <rect key="frame" x="0.0" y="0.0" width="182.5" height="67.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rarity:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-sA-OnF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Rarity:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-sA-OnF">
                                         <rect key="frame" x="190.5" y="0.0" width="182.5" height="67.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -82,10 +85,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Z7o-Tu-3Xo" userLabel="bellPriceStackView">
                                 <rect key="frame" x="20.5" y="621" width="373" height="102"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ki-n2-JgK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ki-n2-JgK">
                                         <rect key="frame" x="0.0" y="0.0" width="266" height="102"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bells2" translatesAutoresizingMaskIntoConstraints="NO" id="FH8-sO-0jk">
@@ -122,6 +125,7 @@
                         <constraints>
                             <constraint firstItem="6PT-2G-RR7" firstAttribute="leading" secondItem="7Dh-Nr-0pq" secondAttribute="leading" constant="-6" id="02k-Og-z3Z"/>
                             <constraint firstItem="zcC-O6-F0q" firstAttribute="width" secondItem="tkX-I7-taO" secondAttribute="width" multiplier="0.9" id="0vi-hS-p5E"/>
+                            <constraint firstItem="gnv-P7-nUq" firstAttribute="top" secondItem="V3j-lv-Yzd" secondAttribute="bottom" constant="18" id="3X8-XN-OOt"/>
                             <constraint firstItem="puX-rH-RCV" firstAttribute="centerX" secondItem="tkX-I7-taO" secondAttribute="centerX" id="55l-23-iX0"/>
                             <constraint firstItem="puX-rH-RCV" firstAttribute="top" secondItem="nSx-gb-H4k" secondAttribute="bottom" constant="24" id="6C2-2b-emE"/>
                             <constraint firstItem="ofL-i4-S59" firstAttribute="width" secondItem="tkX-I7-taO" secondAttribute="width" id="7GZ-OE-xkc"/>
@@ -145,12 +149,15 @@
                             <constraint firstItem="V3j-lv-Yzd" firstAttribute="height" secondItem="tkX-I7-taO" secondAttribute="height" multiplier="0.120536" id="YLs-sH-ND9"/>
                             <constraint firstItem="tkX-I7-taO" firstAttribute="trailing" secondItem="g1S-c0-d2g" secondAttribute="trailing" id="Z01-fh-z05"/>
                             <constraint firstItem="g1S-c0-d2g" firstAttribute="bottom" secondItem="hW6-ev-Epi" secondAttribute="bottom" constant="24" id="acs-8U-T32"/>
+                            <constraint firstItem="gnv-P7-nUq" firstAttribute="width" secondItem="tkX-I7-taO" secondAttribute="width" multiplier="0.903382" id="aez-AQ-OIu"/>
                             <constraint firstItem="ofL-i4-S59" firstAttribute="height" secondItem="tkX-I7-taO" secondAttribute="height" multiplier="0.0625" id="bJN-xd-lyP"/>
                             <constraint firstItem="Z7o-Tu-3Xo" firstAttribute="width" secondItem="tkX-I7-taO" secondAttribute="width" multiplier="0.9" id="caH-zJ-fK3"/>
+                            <constraint firstItem="gnv-P7-nUq" firstAttribute="height" secondItem="tkX-I7-taO" secondAttribute="height" multiplier="0.232143" id="cy5-tP-RRC"/>
                             <constraint firstItem="puX-rH-RCV" firstAttribute="width" secondItem="tkX-I7-taO" secondAttribute="width" multiplier="0.8" id="dd9-95-Zia"/>
                             <constraint firstItem="Z7o-Tu-3Xo" firstAttribute="height" secondItem="tkX-I7-taO" secondAttribute="height" multiplier="0.113839" id="e3M-kc-rfI"/>
                             <constraint firstItem="zcC-O6-F0q" firstAttribute="height" secondItem="tkX-I7-taO" secondAttribute="height" multiplier="0.075" id="fSD-u1-rar"/>
                             <constraint firstItem="54I-tI-UY6" firstAttribute="top" secondItem="g8V-LH-LZj" secondAttribute="bottom" constant="18" id="g0c-KD-Wvq"/>
+                            <constraint firstItem="gnv-P7-nUq" firstAttribute="centerX" secondItem="tkX-I7-taO" secondAttribute="centerX" id="hJ1-y0-JCw"/>
                             <constraint firstItem="tkX-I7-taO" firstAttribute="top" secondItem="7Dh-Nr-0pq" secondAttribute="top" id="ipE-Wf-PS7"/>
                             <constraint firstItem="puX-rH-RCV" firstAttribute="height" secondItem="tkX-I7-taO" secondAttribute="height" multiplier="0.08" id="kXP-Ma-Ym9"/>
                             <constraint firstItem="V3j-lv-Yzd" firstAttribute="centerX" secondItem="tkX-I7-taO" secondAttribute="centerX" id="n61-P7-v0w"/>
@@ -164,11 +171,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundDirtImageView" destination="gnv-P7-nUq" id="sET-Ym-FTe"/>
                         <outlet property="catchPhraseLabel" destination="puX-rH-RCV" id="JfM-Cz-fbz"/>
                         <outlet property="chatBubbleImageImageView" destination="V3j-lv-Yzd" id="7FY-44-gzk"/>
                         <outlet property="fishImageImageView" destination="54I-tI-UY6" id="8JZ-bE-VtO"/>
                         <outlet property="fishNameLabel" destination="g8V-LH-LZj" id="rQN-U9-zEg"/>
                         <outlet property="fishSearchBar" destination="ofL-i4-S59" id="Eu8-kZ-GMy"/>
+                        <outlet property="goFishingButton" destination="hW6-ev-Epi" id="FOU-UB-3wl"/>
                         <outlet property="locationLabel" destination="3N6-uY-U7C" id="ehV-Ho-9Yk"/>
                         <outlet property="priceLabel" destination="4Ki-n2-JgK" id="PL4-qh-ZFt"/>
                         <outlet property="rarityLabel" destination="gYR-sA-OnF" id="QyM-lD-SxF"/>
@@ -180,6 +189,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="acdirt1" width="977" height="610"/>
         <image name="acgrass1" width="1920" height="1200"/>
         <image name="bells2" width="199" height="165"/>
         <image name="mabel" width="882" height="554"/>
