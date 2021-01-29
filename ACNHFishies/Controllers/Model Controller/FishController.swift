@@ -33,7 +33,8 @@ class FishController {
             guard let data = data else { return completion(.failure(.noData)) }
             do {
                 let decodedFish = try JSONDecoder().decode(Fish.self, from: data)
-                completion(.success(decodedFish))
+                
+                return completion(.success(decodedFish))
             } catch {
                 print("========= ERROR =========")
                 print("Function: \(#function)")
@@ -44,7 +45,7 @@ class FishController {
                 return completion(.failure(.thrownError(error)))
             }
         }.resume()
-    }
+    } // END OF FUNC
     
     static func fetchFishSprite(for fish: Fish, completion: @escaping (Result<UIImage, FishError>) -> Void) {
         
@@ -63,7 +64,43 @@ class FishController {
             
             guard let data = data else { return completion(.failure(.noData)) }
             guard let fishSprite = UIImage(data: data) else { return completion(.failure(.unableToDecode)) }
-            completion(.success(fishSprite))
+            
+            return completion(.success(fishSprite))
         }.resume()
-    }
+    } // END OF FUNC
+    
+    static func fetchAllFish(completion: @escaping (Result<[Fish], FishError>) -> Void) {
+        
+        guard let baseURL = baseURL else { return completion(.failure(.invalidURL)) }
+        
+        let finalURL = baseURL
+        
+        URLSession.shared.dataTask(with: finalURL) { (data, _, error) in
+            if let error = error {
+                print("========= ERROR =========")
+                print("Function: \(#function)")
+                print("Error: \(error)")
+                print("Description: \(error.localizedDescription)")
+                print("========= ERROR =========")
+                return completion(.failure(.thrownError(error)))
+            }
+            
+            guard let data = data else { return completion(.failure(.noData)) }
+            do {
+                let decodedFish = try JSONDecoder().decode([Fish].self, from: data)
+                
+                return completion(.success(decodedFish))
+            } catch {
+                print("========= ERROR =========")
+                print("Function: \(#function)")
+                print("Error: \(error)")
+                print("Description: \(error.localizedDescription)")
+                print("========= ERROR =========")
+                
+                return completion(.failure(.thrownError(error)))
+            }
+        }.resume()
+    } // END OF FUNC
+    
+    
 } // END OF CLASS

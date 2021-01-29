@@ -7,6 +7,10 @@
 
 import Foundation
 
+//struct TopLevelArray {
+//    let fish: [Fish]
+//}
+
 struct Fish: Codable {
     let name: Name
     let price: Int
@@ -21,28 +25,31 @@ struct Fish: Codable {
         case imageURL = "image_uri"
         case availability
     }
-} // END OF STRUCT
-
-struct Name: Codable {
-    let nameUSEn: String
     
-    enum CodingKeys: String, CodingKey {
-        case nameUSEn = "name-USen"
-    }
-} // END OF STRUCT
-
-struct Availability: Codable {
-    let location: String
-    let rarity: String
-    let monthArray: [Int]
-    
-    enum CodingKeys: String, CodingKey {
-        case location
-        case rarity
-        case monthArray = "month-array-northern"
+    struct Name: Codable {
+        let nameUSEn: String
+        
+        enum CodingKeys: String, CodingKey {
+            case nameUSEn = "name-USen"
+        }
     }
     
+    struct Availability: Codable {
+        let location: String
+        let rarity: String
+        let monthArray: [Int]
+        
+        enum CodingKeys: String, CodingKey {
+            case location
+            case rarity
+            case monthArray = "month-array-northern"
+        }
+    }
+    
 } // END OF STRUCT
+
+
+
 
 
 

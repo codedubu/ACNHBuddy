@@ -50,7 +50,6 @@ class FishViewController: UIViewController {
             }
         }
         chatBubbleImageImageView.image = UIImage(named: "chatbubble")
-        
     }
     
     // MARK: - Helper Functions
@@ -66,7 +65,6 @@ class FishViewController: UIViewController {
                     self.locationLabel.text = " Location: \n \(fish.availability.location)"
                     self.rarityLabel.text = " Rarity: \n \(fish.availability.rarity)"
                     self.priceLabel.text = " Price: \(fish.price.withCommas()) bells"
-                    
                     
                 case .failure(let error):
                     print(error)
